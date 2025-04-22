@@ -1,9 +1,19 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { HeaderComponent } from "./components/header/header.component";
+import { AccordionComponent } from "./components/accordion/accordion.component";
+import { ButtonComponent } from "./components/button/button.component";
+import { CardComponent } from "./components/card/card.component";
+import { DownloadExtensionComponent } from "./components/download-extension/download-extension.component";
+import { FAQuestionComponent } from "./components/f-a-question/f-a-question.component";
+import { FeaturesComponent } from "./components/features/features.component";
+import { MenuTabsComponent } from "./components/menu-tabs/menu-tabs.component";
+import { SBManagerComponent } from "./components/s-b-manager/s-b-manager.component";
+import { SocialComponent } from "./components/social/social.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, HeaderComponent, AccordionComponent, ButtonComponent, CardComponent, DownloadExtensionComponent, FAQuestionComponent, FeaturesComponent, MenuTabsComponent, SBManagerComponent, SocialComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
