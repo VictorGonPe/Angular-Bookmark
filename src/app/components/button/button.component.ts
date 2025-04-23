@@ -8,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class ButtonComponent {
 
+  textButton: string = "LOGIN";
+
+  buttonClick(): void {
+    console.log('Botón clicado');
+  }
+
 }
