@@ -2,12 +2,13 @@ button {
     padding: 0.5rem 2rem;
     background-color: rgb(69, 98, 244);
     border-radius: 6px;
-    border: 1px solid rgb(69, 98, 244) ;
+    border: 1px solid rgb(69, 98, 244);
     color: white;
     font-weight: 700;
+    
     &:hover {
         background-color: white;
-        border: 1px solid rgb(241, 84, 84) ;
+        border: 1px solid rgb(241, 84, 84);
         color: rgb(241, 84, 84);
         cursor: pointer;
     }

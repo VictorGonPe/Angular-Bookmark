@@ -1,0 +1,20 @@
+.managerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 8rem;
+}
+
+.section-one {
+    max-width: 50%;
+}
+
+img{
+    width: 120%;
+}
+
+.buttonManager {
+    display: flex;
+    gap: 0.5rem;
+    padding-top: 0.5rem;
+}
