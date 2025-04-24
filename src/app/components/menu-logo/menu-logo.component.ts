@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './menu-logo.component.scss'
 })
 export class MenuLogoComponent {
-  menu: string[] = ["FEATURES", "PRICING", "CONTACT"];
+  menu: {nameLink: string, link: string}[] = [ {nameLink: 'FEATURES', link: '#'}, {nameLink: 'PRICING', link: '#'}, {nameLink: 'CONTACT', link: '#'}];
 }
