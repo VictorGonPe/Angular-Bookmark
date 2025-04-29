@@ -13,9 +13,10 @@ import { SocialComponent } from "./components/social/social.component";
 
 @Component({
   selector: 'app-root',
+  standalone: true,
   imports: [RouterOutlet, HeaderComponent, AccordionComponent, ButtonComponent, CardComponent, DownloadExtensionComponent, FAQuestionComponent, FeaturesComponent, MenuTabsComponent, SBManagerComponent, SocialComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
   title = 'angular-bookmark';

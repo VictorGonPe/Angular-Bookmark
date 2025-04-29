@@ -7,32 +7,26 @@
         </div>
 
         <div class="nav selector" id="selector-tab">
-            <div class="nav-container">
-                <button class="nav-button active" id="bookmarking-tab" type="button" aria-selected="true">Simple
-                    Bookmarking</button>
-                <div class="underline"></div>
-            </div>
-            <div class="nav-container">
-                <button class="nav-button " id="searching-tab" type="button" aria-selected="false">Speedy
-                    Searching</button>
-                <div class="underline"></div>
-            </div>
-            <div class="nav-container">
-                <button class="nav-button " id="sharing-tab" type="button" aria-selected="false">Easy Sharing</button>
-                <div class="underline"></div>
+            <div class="nav-container" *ngFor="let tab of ['bookmarking', 'searching', 'sharing']">
+              <button class="nav-button" [class.active]="selectedTab === tab" type="button" (click)="selectTab(tab)" [attr.aria-selected]="selectedTab === tab">
+                {{ tab === 'bookmarking' ? 'Simple Bookmarking' : tab === 'searching' ? 'Speedy Searching' : 'Easy Sharing' }}
+              </button>
+              <div class="underline"></div>
             </div>
         </div>
     </div>
 
     <div class="dynamic-section">
         <div class="imageFeature">
-            <img src="assets/img/illustration-features-tab-1.svg">
+          <img [src]="tabs[selectedTab].img" alt="{{ tabs[selectedTab].title }}">
         </div>
         <div class="section-two">
-            <h2>Bookmark in one click</h2>
-            <p>Organaze your bookmarks however you like. Our simple drag-and-drop interface gives you complete control
-                over how you manage your favourite sites.</p>
-            <div class="buttonManager"><app-button></app-button></div>
+          <h2>{{ tabs[selectedTab].title }}</h2>
+          <p>{{ tabs[selectedTab].description }}</p>
+          <div class="buttonManager">
+            <app-button></app-button>
+          </div>
         </div>
-    </div>
+      </div>
+      
 </section>
