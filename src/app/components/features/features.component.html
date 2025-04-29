@@ -1,1 +1,32 @@
-<p>features works!</p>
+<section class="featuresContainer">
+    <div class="section-first">
+        <div class="features">
+            <h2>Features</h2>
+            <p>Our aim is to make it quick and easy for you to access your favourite websites. Your booksmarks sync
+                between your devices so you can acces them on the go.</p>
+        </div>
+
+        <div class="nav selector" id="selector-tab">
+            <div class="nav-container" *ngFor="let tab of ['bookmarking', 'searching', 'sharing']">
+              <button class="nav-button" [class.active]="selectedTab === tab" type="button" (click)="selectTab(tab)" [attr.aria-selected]="selectedTab === tab">
+                {{ tab === 'bookmarking' ? 'Simple Bookmarking' : tab === 'searching' ? 'Speedy Searching' : 'Easy Sharing' }}
+              </button>
+              <div class="underline"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="dynamic-section">
+        <div class="imageFeature">
+          <img [src]="tabs[selectedTab].img" alt="{{ tabs[selectedTab].title }}">
+        </div>
+        <div class="section-two">
+          <h2>{{ tabs[selectedTab].title }}</h2>
+          <p>{{ tabs[selectedTab].description }}</p>
+          <div class="buttonManager">
+            <app-button></app-button>
+          </div>
+        </div>
+      </div>
+      
+</section>
