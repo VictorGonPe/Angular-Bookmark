@@ -1,7 +1,7 @@
 
 <div class="card-container">
-    <ng-container *ngFor = "let name of cardNames">
-        <div class="card">
+    <ng-container *ngFor = "let name of cardNames; let i = index">
+        <div class="card" [ngStyle]="{ 'margin-top': (i * 30) + 'px'}">
             <img [src]="card[name].imageCard" [alt]="name" />
             <h3>{{card[name].p1}}</h3>
             <p>{{card[name].p2}}</p>
