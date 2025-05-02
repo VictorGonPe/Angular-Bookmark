@@ -1,1 +1,11 @@
-<p>card works!</p>
+
+<div class="card-container">
+    <ng-container *ngFor = "let name of cardNames">
+        <div class="card">
+            <img [src]="card[name].imageCard" [alt]="name" />
+            <h3>{{card[name].p1}}</h3>
+            <p>{{card[name].p2}}</p>
+            <app-button></app-button>
+        </div>
+    </ng-container>
+</div>
