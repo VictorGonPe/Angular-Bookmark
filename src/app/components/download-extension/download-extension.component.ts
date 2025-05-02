@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
+import { CardComponent } from '../card/card.component';
 
 @Component({
   selector: 'app-download-extension',
-  imports: [],
+  standalone: true,
+  imports: [CardComponent],
   templateUrl: './download-extension.component.html',
   styleUrl: './download-extension.component.scss'
 })
