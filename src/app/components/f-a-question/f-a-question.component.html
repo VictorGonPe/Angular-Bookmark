@@ -6,10 +6,12 @@
                 us.</p>
         </div>
         <div class="container-accordion">
-            <app-accordion></app-accordion>
-            <app-accordion></app-accordion>
-            <app-accordion></app-accordion>
-            <app-accordion></app-accordion>
+            <app-accordion
+            *ngFor="let q of questionKeys; let i = index"
+            [textP]="q"
+            [answer]="questions[q]"
+            [isFirst]="i === 0"
+            ></app-accordion>
         </div>
         <div class="button-question"><app-button></app-button></div>
     </div>

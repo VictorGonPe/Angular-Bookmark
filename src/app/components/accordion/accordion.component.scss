@@ -1,12 +1,25 @@
 .container-question {
-    display: flex;
-    align-items: center;
-    width: 60%;
-    justify-content: space-between;
-    margin: auto;
-    border-bottom: 1.5px solid rgb(222, 221, 221);
+  display: flex;
+  align-items: center;
+  width: 60%;
+  justify-content: space-between;
+  margin: auto;
+  border-bottom: 1.5px solid rgb(222, 221, 221);
 }
 
-.container-question.isFirst {
-    border-top: 1.5px solid rgb(222, 221, 221);
+.container-question.is-first {
+  border-top: 1.5px solid rgb(222, 221, 221);
+}
+
+.arrow-icon {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.answer {
+  width: 60%;
+  margin: 0 auto;
+  padding: 1rem 0;
+  color: #555;
+  font-size: 0.95rem;
 }
