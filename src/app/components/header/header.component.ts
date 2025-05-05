@@ -10,5 +10,5 @@ import { ButtonComponent } from "../button/button.component";
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
-
+  
 }
