@@ -1,0 +1,12 @@
+.container-question {
+    display: flex;
+    align-items: center;
+    width: 60%;
+    justify-content: space-between;
+    margin: auto;
+    border-bottom: 1.5px solid rgb(222, 221, 221);
+}
+
+.container-question.isFirst {
+    border-top: 1.5px solid rgb(222, 221, 221);
+}

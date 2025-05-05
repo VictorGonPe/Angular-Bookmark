@@ -1,5 +1,10 @@
 .questionsContainer {
-    margin-top: 6rem;
+   margin-block: 6rem;
+}
+
+.container-accordion {
+    margin-top: 1.5rem;
+    border-top: 1.5px solid rgb(222, 221, 221);
 }
 
 .question{
@@ -9,4 +14,10 @@
     width: 60%;
     margin: auto;
     text-align: center;
+}
+
+.button-question {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
 }
