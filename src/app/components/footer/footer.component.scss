@@ -1,5 +1,6 @@
 footer {
     display: flex;
+    flex-direction: column;
     background-color: rgb(67, 96, 222);
     margin-inline: -8rem;
 }
@@ -17,6 +18,24 @@ h3 {
 }
 
 .sub-footer {
-    padding: 2rem;
-    color: rgb(27, 27, 76);
+    background-color: rgb(31, 31, 61);
+    display: flex;
+    justify-content: space-between;
+    padding-block: 1.5rem;
+    padding-inline: 8rem;
+    color: white;
+
+}
+
+input {
+    height: 1.8rem;
+    border-radius: 5px;
+    border: 2px solid white;
+    padding-left: 10px;
+    margin-right: 1rem;
+    width: 60%;
+    &:focus {
+        border: 2px solid rgb(241, 84, 84);
+        outline: none;
+    }
 }
