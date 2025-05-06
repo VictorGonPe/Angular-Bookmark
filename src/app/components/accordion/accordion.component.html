@@ -1,1 +1,13 @@
-<p>accordion works!</p>
+<div class="container-question" [class.is-first]="isFirst">
+  <p>{{ textP }}</p>
+  <img
+    src="assets/img/icon-arrow.svg"
+    alt="icon-arrow"
+    class="arrow-icon"
+    (click)="openAccordion()"
+  />
+</div>
+
+<div class="answer" *ngIf="isOpen">
+  <p>{{ answer }}</p>
+</div>

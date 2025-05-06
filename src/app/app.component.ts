@@ -10,12 +10,14 @@ import { FeaturesComponent } from "./components/features/features.component";
 import { MenuTabsComponent } from "./components/menu-tabs/menu-tabs.component";
 import { SBManagerComponent } from "./components/s-b-manager/s-b-manager.component";
 import { SocialComponent } from "./components/social/social.component";
+import { FooterComponent } from "./components/footer/footer.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, HeaderComponent, AccordionComponent, ButtonComponent, CardComponent, DownloadExtensionComponent, FAQuestionComponent, FeaturesComponent, MenuTabsComponent, SBManagerComponent, SocialComponent],
+  standalone: true,
+  imports: [RouterOutlet, HeaderComponent, AccordionComponent, ButtonComponent, CardComponent, DownloadExtensionComponent, FAQuestionComponent, FeaturesComponent, MenuTabsComponent, SBManagerComponent, SocialComponent, FooterComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
   title = 'angular-bookmark';

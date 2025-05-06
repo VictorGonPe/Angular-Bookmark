@@ -1,11 +1,21 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { CommonModule } from '@angular/common'; 
 
 @Component({
   selector: 'app-button',
-  imports: [],
+  standalone: true,
+  imports: [CommonModule],
   templateUrl: './button.component.html',
-  styleUrl: './button.component.scss'
+  styleUrls: ['./button.component.scss']
 })
+
 export class ButtonComponent {
+
+  @Input() textButton: string = '';
+  @Input() customClasses: string | string[] = '';
+  
+  buttonClick(): void {
+    console.log('Botón clicado');
+  }
 
 }

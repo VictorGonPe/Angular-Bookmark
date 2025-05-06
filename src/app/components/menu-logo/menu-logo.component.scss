@@ -1,0 +1,23 @@
+.menu-logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu {
+    display: flex;
+    gap: 3rem;
+   
+}
+
+li {
+    list-style: none; 
+    &:hover {
+        color: rgb(241, 84, 84);
+    }
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}

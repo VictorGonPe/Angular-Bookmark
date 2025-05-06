@@ -1,1 +1,18 @@
-<p>f-a-question works!</p>
+<section class="questionsContainer">
+    <div class="section-four">
+        <div class="question">
+            <h2>Frequently Asked Questions</h2>
+            <p>Here are some of our FAQs. If you have any other questions you'd like answered please fell free to email
+                us.</p>
+        </div>
+        <div class="container-accordion">
+            <app-accordion
+            *ngFor="let q of questionKeys; let i = index"
+            [textP]="q"
+            [answer]="questions[q]"
+            [isFirst]="i === 0"
+            ></app-accordion>
+        </div>
+        <div class="button-question"><app-button [textButton]="'More Info'" [customClasses]="'primary'"></app-button></div>
+    </div>
+</section>
