@@ -54,3 +54,59 @@ img{
     gap: 0.5rem;
     padding-top: 0.5rem;
 }
+
+@media (max-width: 768px) {
+
+    .features {
+        margin-top: 10rem;
+        max-width: 100%;
+        width: 90%;
+    }
+
+    h2 {
+        padding-top: 1rem;
+        font-size: 3rem;
+    }
+    
+    p {
+        font-size: 2rem;
+        color: rgb(165, 165, 165);
+    }
+
+    .dynamic-section {
+        flex-direction: column;
+        padding: 1rem
+    }
+
+    .section-two{
+        max-width: 100%;
+        text-align: center;
+        width: 90%;
+    }
+
+    .selector {
+        max-width: 90%;
+        width: 100%;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .nav-button  {
+        font-size: 2rem;
+        padding: 1.5rem;
+    }
+
+    .underline {
+        width: 50%;
+        margin: auto;
+    }
+    
+    .imageFeature {
+        display: flex;
+        justify-content: center;
+        width: 90%;
+    }
+}
+
+
+
