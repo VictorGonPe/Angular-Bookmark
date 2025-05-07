@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-menu-logo',
@@ -8,5 +8,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./menu-logo.component.scss']
 })
 export class MenuLogoComponent {
-  menu: {nameLink: string, link: string}[] = [ {nameLink: 'FEATURES', link: '#'}, {nameLink: 'PRICING', link: '#'}, {nameLink: 'CONTACT', link: '#'}];
+  @Input() isOpen: boolean = false;
+
+  menu: { nameLink: string; link: string }[] = [
+    { nameLink: 'FEATURES', link: '#' },
+    { nameLink: 'PRICING', link: '#' },
+    { nameLink: 'CONTACT', link: '#' }
+  ];
 }

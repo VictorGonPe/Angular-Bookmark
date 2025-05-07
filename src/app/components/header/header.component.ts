@@ -10,5 +10,9 @@ import { ButtonComponent } from "../button/button.component";
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
-  
+  menuOpen = false;
+
+  toggleMenu() {
+    this.menuOpen = !this.menuOpen;
+  }
 }
