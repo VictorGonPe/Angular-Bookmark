@@ -18,3 +18,35 @@
     gap: 0.5rem;
     padding-top: 0.5rem;
 } 
+
+@media (max-width: 768px) {
+
+    .managerContainer{
+        flex-direction: column-reverse; 
+    }
+
+    .section-one{
+        max-width: 100%;
+        text-align: center;
+        width: 90%;
+    }
+
+    .imageManager {
+        width: 100%;
+        display: flex;
+        margin: auto; 
+    }
+
+    .buttonManager {
+        justify-content: center;
+    }
+
+    h1{
+        font-size: 4rem;
+    }
+
+    p {
+        font-size: 2rem;
+        color: rgb(165, 165, 165);
+    }
+}

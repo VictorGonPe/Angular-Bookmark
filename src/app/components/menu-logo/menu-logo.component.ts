@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './menu-logo.component.html',
-  styleUrl: './menu-logo.component.scss'
+  styleUrls: ['./menu-logo.component.scss']
 })
 export class MenuLogoComponent {
   menu: {nameLink: string, link: string}[] = [ {nameLink: 'FEATURES', link: '#'}, {nameLink: 'PRICING', link: '#'}, {nameLink: 'CONTACT', link: '#'}];

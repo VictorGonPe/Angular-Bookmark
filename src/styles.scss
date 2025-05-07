@@ -3,3 +3,14 @@ body {
     margin: 0%;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
+:root {
+    --layout-padding: 8rem;
+}
+
+@media (max-width:768px) {
+    :root {
+        --layout-padding: 1rem;
+        width: 160%;
+    }
+}

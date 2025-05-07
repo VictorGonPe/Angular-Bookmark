@@ -1,5 +1,11 @@
 .layout-body {
-    padding-inline: 8rem;
+    padding-inline: var(--layout-padding);
     max-width: 1600px;
     margin: auto;
+}
+
+@media (max-width: 768px) {
+    .layout-body{
+        width: 100%;
+    }
 }
