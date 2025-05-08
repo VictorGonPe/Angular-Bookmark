@@ -7,11 +7,12 @@
 .menu {
     display: flex;
     gap: 3rem;
-   
+
 }
 
 li {
-    list-style: none; 
+    list-style: none;
+
     &:hover {
         color: rgb(241, 84, 84);
     }
@@ -20,4 +21,10 @@ li {
 a {
     text-decoration: none;
     color: inherit;
+}
+
+@media (max-width: 768px) {
+    .menu-logo {
+        flex-direction: column;
+    }
 }
