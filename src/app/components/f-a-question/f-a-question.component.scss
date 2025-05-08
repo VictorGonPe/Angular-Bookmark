@@ -1,5 +1,5 @@
 .questionsContainer {
-   margin-block: 6rem;
+    margin-block: 6rem;
 }
 
 .container-accordion {
@@ -19,4 +19,27 @@
     display: flex;
     justify-content: center;
     margin-top: 3rem;
+}
+
+@media (max-width: 768px) {
+    
+    h2 {
+        padding-top: 1rem;
+        font-size: 3rem;
+    }
+    
+    p {
+        font-size: 2rem;
+        color: rgb(165, 165, 165);
+    }
+
+    .question {
+        max-width: 100%;
+        width: 90%;
+
+    }
+
+    .container-accordion {
+        font-size: 1.1rem;
+    }
 }

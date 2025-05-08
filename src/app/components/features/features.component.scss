@@ -82,6 +82,7 @@ img{
         max-width: 100%;
         text-align: center;
         width: 90%;
+        padding-left: 0rem;
     }
 
     .selector {
@@ -105,6 +106,11 @@ img{
         display: flex;
         justify-content: center;
         width: 90%;
+    }
+
+    .buttonManager{
+        justify-content: center;
+        margin: auto;
     }
 }
 

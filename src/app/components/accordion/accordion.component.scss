@@ -23,3 +23,9 @@
   color: #555;
   font-size: 0.95rem;
 }
+
+@media (max-width: 768px) {
+  .container-question{
+    width: 90%;
+  }
+}

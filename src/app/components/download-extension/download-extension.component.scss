@@ -11,6 +11,24 @@
     text-align: center;
 }
 
-p {
-    margin-top: 0px;
+@media (max-width: 768px) {
+    
+    h2 {
+        padding-top: 1rem;
+        font-size: 3rem;
+    }
+    
+    p {
+        font-size: 2rem;
+        color: rgb(165, 165, 165);
+    }
+
+    .download {
+        max-width: 100%;
+        width: 90%;
+
+    }
 }
+
+
+
