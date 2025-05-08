@@ -27,7 +27,7 @@ h3 {
 }
 
 input {
-    height: 1.8rem;
+    height: 2rem;
     border-radius: 5px;
     border: 2px solid white;
     padding-left: 10px;
@@ -37,4 +37,28 @@ input {
         border: 2px solid rgb(241, 84, 84);
         outline: none;
     }
+}
+
+@media (max-width: 768px) {
+
+    h5 {
+        margin-top: 0px;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+    }
+
+    .email-footer {
+        margin-block: 3rem;
+        padding: 0px;
+        width: 90%;
+    }
+
+    input {
+        width: 80%;
+        margin: 0px;
+        margin-bottom: 0.8rem;
+    }
+    
 }
