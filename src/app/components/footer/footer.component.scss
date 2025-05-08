@@ -47,18 +47,37 @@ input {
 
     h3 {
         font-size: 1.4rem;
+        width: 70%;
+        margin: auto;
     }
 
     .email-footer {
         margin-block: 3rem;
         padding: 0px;
-        width: 90%;
+        width: 100%;
     }
 
-    input {
-        width: 80%;
-        margin: 0px;
-        margin-bottom: 0.8rem;
+    .container {
+        display: flex;
+        flex-direction: column;
+        max-width: 80%;
+        justify-content: center;
+        margin: auto;
+        margin-top: 2rem;
+    }
+
+    .inputFooter {
+        width: 100%;
+        margin-bottom: 0.8rem;  
+        padding-block: 17px;
+        box-sizing: border-box;
+    }
+
+    .sub-footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     
 }

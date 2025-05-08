@@ -24,7 +24,17 @@ a {
 }
 
 @media (max-width: 768px) {
+
     .menu-logo {
         flex-direction: column;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 40px auto;
+        align-items: center;
+        font-size: 1.2rem;
     }
 }
