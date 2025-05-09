@@ -1,56 +1,118 @@
-.features {  
-    display: row;
-    justify-items: center;
-    max-width: 60%;
-    margin: 3rem auto;
-    text-align: center;
+.features {
+  display: row;
+  justify-items: center;
+  max-width: 60%;
+  margin: 3rem auto;
+  text-align: center;
+}
+
+h2 {
+  padding-top: 0.5rem;
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1.3rem;
+  color: rgb(165, 165, 165);
 }
 
 .selector {
-    display: flex;
-    width: 75%;
-    justify-content: space-between;
-    list-style: none;
-    margin: 3rem auto;
+  display: flex;
+  width: 75%;
+  justify-content: space-between;
+  list-style: none;
+  margin: 3rem auto;
 }
 
 .nav-button {
-    border-style: none;
-    background-color: white;
-    font-size: 0.9rem;
-    cursor: pointer;
-    min-width: 145px;
+  border-style: none;
+  background-color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  min-width: 145px;
 }
 
 .underline {
-    width: 100%;
-    height: 3px;
-    background: transparent;
-    margin-top: 0.5rem;
+  width: 100%;
+  height: 3px;
+  background: transparent;
+  margin-top: 0.5rem;
 }
 
 .active + .underline {
-    background: red;
+  background: red;
 }
 
 .dynamic-section {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-block: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-block: 2rem;
 }
 
 .section-two {
-    max-width: 40%;
-    padding-left: 3rem;
+  max-width: 40%;
+  padding-left: 3rem;
 }
 
-img{
-    width: 90%;
+img {
+  width: 90%;
 }
 
 .buttonManager {
+  display: flex;
+  gap: 0.5rem;
+  padding-top: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .features {
+    margin-top: 10rem;
+    max-width: 100%;
+    width: 80%;
+  }
+
+  .dynamic-section {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .section-two {
+    max-width: 100%;
+    text-align: center;
+    width: 80%;
+    padding-left: 0rem;
+  }
+
+  .selector {
+    max-width: 90%;
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .nav-button {
+    font-size: 2rem;
+    padding: 1.5rem;
+  }
+
+  .underline {
+    width: 50%;
+    margin: auto;
+  }
+
+  .imageFeature {
     display: flex;
-    gap: 0.5rem;
-    padding-top: 0.5rem;
+    justify-content: center;
+    width: 90%;
+  }
+
+  .nav-button {
+    font-size: 1.5rem;
+  }
+
+  .buttonManager {
+    justify-content: center;
+    margin: auto;
+  }
 }

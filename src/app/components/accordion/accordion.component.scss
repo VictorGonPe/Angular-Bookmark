@@ -16,10 +16,24 @@
   transition: transform 0.3s ease;
 }
 
+p:hover {
+  color: rgb(241, 84, 84);
+}
+
 .answer {
   width: 60%;
   margin: 0 auto;
   padding: 1rem 0;
-  color: #555;
+  color:  rgb(165, 165, 165);
   font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+  .container-question {
+    width: 90%;
+  }
+
+  .answer {
+    width: 90%;
+  }
 }
