@@ -9,6 +9,7 @@ import { ButtonComponent } from "../button/button.component";
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
+
 export class HeaderComponent {
   menuOpen = false;
 

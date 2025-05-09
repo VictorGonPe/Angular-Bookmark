@@ -1,34 +1,29 @@
 .downloadContainer {
-    margin-top: 6rem;
+  margin-top: 6rem;
 }
 
-.download{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 60%;
-    margin: auto;
-    text-align: center;
+.download {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  margin: auto;
+  text-align: center;
+}
+
+h2 {
+  padding-top: 0.5rem;
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1.3rem;
+  color: rgb(165, 165, 165);
 }
 
 @media (max-width: 768px) {
-    
-    h2 {
-        padding-top: 1rem;
-        font-size: 3rem;
-    }
-    
-    p {
-        font-size: 2rem;
-        color: rgb(165, 165, 165);
-    }
-
-    .download {
-        max-width: 100%;
-        width: 90%;
-
-    }
+  .download {
+    max-width: 100%;
+    width: 80%;
+  }
 }
-
-
-
