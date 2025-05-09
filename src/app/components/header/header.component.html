@@ -1,4 +1,16 @@
 <header>
-  <app-menu-logo></app-menu-logo>
-  <app-button [textButton]="'LOGIN'" [customClasses]="'secondary'"></app-button>
+  <app-menu-logo class="hide-on-mobile"></app-menu-logo>
+  <img src="assets/img/logo-bookmark.svg" alt="logo Bookmark" class="hide-on-desktop">
+
+  <button class="burger" (click)="toggleMenu()">
+    <span></span> <!-- crea las rayas del menu -->
+    <span></span>
+    <span></span>
+  </button>
+
+  <app-button
+    class="hide-on-mobile"
+    [textButton]="'LOGIN'"
+    [customClasses]="'secondary'"
+  ></app-button>
 </header>

@@ -1,23 +1,38 @@
 .menu-logo {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .menu {
-    display: flex;
-    gap: 3rem;
-   
+  display: flex;
+  gap: 3rem;
 }
 
 li {
-    list-style: none; 
-    &:hover {
-        color: rgb(241, 84, 84);
-    }
+  list-style: none;
+
+  &:hover {
+    color: rgb(241, 84, 84);
+  }
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+
+@media (max-width: 768px) {
+  .menu-logo {
+    flex-direction: column;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 40px auto;
+    align-items: center;
+    font-size: 1.2rem;
+  }
 }
