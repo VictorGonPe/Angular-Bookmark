@@ -13,4 +13,6 @@
     [textButton]="'LOGIN'"
     [customClasses]="'secondary'"
   ></app-button>
+
+  <app-menu-mobile *ngIf="menuOpen" (close)="toggleMenu()" ></app-menu-mobile>
 </header>
