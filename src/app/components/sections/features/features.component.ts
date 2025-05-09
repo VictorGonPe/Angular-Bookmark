@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common'; 
-import { ButtonComponent } from '../button/button.component';
+import { ButtonComponent } from '../../ui/button/button.component';
 
 @Component({
   selector: 'app-features',

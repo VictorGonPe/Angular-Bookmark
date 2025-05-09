@@ -1,7 +1,7 @@
 import { Component, EventEmitter, Output } from '@angular/core';
 import { MenuLogoComponent } from "../menu-logo/menu-logo.component";
-import { SocialComponent } from "../social/social.component";
-import { ButtonComponent } from "../button/button.component";
+import { SocialComponent } from "../../ui/social/social.component";
+import { ButtonComponent } from "../../ui/button/button.component";
 
 @Component({
   selector: 'app-menu-mobile',

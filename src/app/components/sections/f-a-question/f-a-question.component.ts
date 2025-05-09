@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { AccordionComponent } from '../accordion/accordion.component';
-import { ButtonComponent } from "../button/button.component";
+import { AccordionComponent } from '../../ui/accordion/accordion.component';
+import { ButtonComponent } from "../../ui/button/button.component";
 
 @Component({
   selector: 'app-f-a-question',

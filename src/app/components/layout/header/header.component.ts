@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NgIf } from '@angular/common';
 import { MenuLogoComponent } from "../menu-logo/menu-logo.component";
-import { ButtonComponent } from "../button/button.component";
+import { ButtonComponent } from "../../ui/button/button.component";
 import { MenuMobileComponent } from "../menu-mobile/menu-mobile.component";
 
 @Component({

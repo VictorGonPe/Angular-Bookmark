@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { ButtonComponent } from "../button/button.component";
+import { ButtonComponent } from "../../ui/button/button.component";
 import { MenuLogoComponent } from "../menu-logo/menu-logo.component";
-import { SocialComponent } from "../social/social.component";
+import { SocialComponent } from "../../ui/social/social.component";
 
 @Component({
   selector: 'app-footer',
