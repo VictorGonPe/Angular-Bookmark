@@ -1,4 +1,10 @@
 <div class="menu-mobile">
-  <button class="burger" (click)="emitClose()">X</button>
-  <app-menu-logo></app-menu-logo>
+  <button class="burger" (click)="emitClose()">✕</button>
+  <div class="menu-content">
+      <app-menu-logo></app-menu-logo>
+      <app-button class="button" [customClasses]="'quaternary'" [textButton]="'LOGIN'"></app-button>
+  </div>
+  <div class="social">
+      <app-social></app-social>
+  </div>
 </div>
